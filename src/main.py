@@ -25,7 +25,7 @@ confluence = Confluence(
     password=envs['token'],
     cloud=True)
 # Print workspace string
-print(join(workspace, envs['from']))
+print("workspace: ",join(workspace, envs['from']))
 
 # Read Markdown file
 with open(join(workspace, envs['from'])) as f:
